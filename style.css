@@ -19,8 +19,8 @@
 }
 /* --Dark mode ---*/
 body {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     transition: background-color 0.3s, color 0.3s;
 }
 
