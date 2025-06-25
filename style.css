@@ -3,17 +3,17 @@
 
 /* ----- VARIABLES (DARK THEME) ----- */
 :root {
-    --body-color: #121212;
-    --color-white: #1E1E1E;
+    --body-color: #0d1117;
+    --color-white: #161b22;
 
-    --text-color-second: #E0E0E0;
-    --text-color-third: #00C9A7;
+    --text-color-second: #c9d1d9;
+    --text-color-third: #58a6ff;
 
-    --first-color: #6C63FF;
-    --first-color-hover: #4038D6;
+    --first-color: #238636;
+    --first-color-hover: #2ea043;
 
-    --second-color: #5A50E3;
-    --third-color: #C0A631;
+    --second-color: #238636;
+    --third-color: #f0b429;
     --first-shadow-color: rgba(255, 255, 255, 0.05);
 }
 
@@ -21,53 +21,55 @@
 
 /* Additional Dark Theme Adjustments */
 .scroll-btn {
-    background: #1E1E1E;
-    color: #E0E0E0;
+    background: var(--color-white);
+    color: var(--text-color-second);
 }
 
 .about-info {
-    background: #1E1E1E;
-    color: #E0E0E0;
+    background: var(--color-white);
+    color: var(--text-color-second);
 }
 
 .about-info p {
-    color: #B0B0B0;
+    color: #8b949e;
 }
 
 .skills-box {
-    background: #1E1E1E;
+    background: var(--color-white);
+    color: var(--text-color-second);
 }
 
 .project-box,
 .full-width-project-box {
-    background: #1E1E1E;
-    color: #E0E0E0;
+    background: var(--color-white);
+    color: var(--text-color-second);
 }
 
 .project-box label,
 .full-width-project-box label {
-    color: #CCCCCC;
+    color: #8b949e;
 }
 
 .full-width-project-box h3 {
-    color: #E0E0E0;
+    color: var(--text-color-second);
 }
 
 .contact-info {
-    background: #222;
+    background: var(--color-white);
+    color: var(--text-color-second);
 }
 
 footer {
-    background: #1A1A1A;
-    color: #E0E0E0;
+    background: #0d1117;
+    color: var(--text-color-second);
 }
 
 .footer_menu_list a {
-    color: #CCCCCC;
+    color: var(--text-color-second);
 }
 
 .bottom-footer {
-    color: #888;
+    color: #8b949e;
 }
 
 /* Light text in buttons */
