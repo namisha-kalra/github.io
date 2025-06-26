@@ -1,36 +1,40 @@
 please change the color theme in dark color
 
 /* ----- POPPINS FONT Link ----- */
+/* ----- POPPINS FONT Link ----- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-/* ----- VARIABLES ----- */
-:root{
-    --body-color: rgb(250, 250, 250);
-    --color-white: rgb(255, 255, 255);
+/* ----- VARIABLES (Pink & Beige Theme) ----- */
+:root {
+    --body-color: #fff0f5; /* light pink background */
+    --color-white: #fffaf0; /* beige-ish white */
 
-    --text-color-second: rgb(68, 68, 68);
-    --text-color-third: rgb(30, 159, 171);
+    --text-color-second: #3b3b3b;
+    --text-color-third: #d63384; /* deep pink accent */
 
-    --first-color: rgb(110, 87, 224);
-    --first-color-hover: rgb(40, 91, 212);
+    --first-color: #f78fb3; /* soft pink */
+    --first-color-hover: #d66fa2;
 
-    --second-color: rgb(110, 87, 224);
-    --third-color: rgb(192, 166, 49);
+    --second-color: #f3c6b8; /* soft beige-pink */
+    --third-color: #f7d794; /* pastel yellow accent */
     --first-shadow-color: rgba(0, 0, 0, 0.1);
 
 }
 /* --Dark mode ---*/
 body {
-    background-color: black;
-    color: white;
+    background: var(--body-color);
+    color: var(--text-color-second);
     transition: background-color 0.3s, color 0.3s;
 }
 
 body.dark-mode {
-    background-color: black;
+    background-color: #2e2e2e;
     color: white;
 }
-
+/* ----- TEXT VISIBILITY ----- */
+h1, h2, h3, h4, h5, h6, p, span, label, a {
+    color: var(--text-color-second);
+}
 
 /* ----- BASE ----- */
 *{
@@ -39,10 +43,68 @@ body.dark-mode {
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-
+/* ----- BUTTON COLORS ----- */
+.btn {
+    background: var(--first-color);
+    color: white;
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+.btn:hover {
+    background: var(--first-color-hover);
+    transform: scale(1.05);
+}
+/* ----- ICON HOVER ----- */
+.icon:hover {
+    color: var(--text-color-third);
+    transform: scale(1.2);
+    transition: all 0.3s ease-in-out;
 /* ----- SMOOTH SCROLL ----- */
 html{
     scroll-behavior: smooth;
+}
+/* ----- NAVIGATION HIGHLIGHT ----- */
+.active-link {
+    color: var(--text-color-third);
+}
+.active-link::after {
+    background: var(--text-color-third);
+}
+
+/* ----- SCROLL BUTTON ----- */
+.scroll-btn {
+    background: var(--first-color);
+    color: white;
+}
+.scroll-btn:hover {
+    background: var(--first-color-hover);
+}
+
+/* ----- PROJECT ICON COLOR FIX ----- */
+.project-box > i {
+    color: var(--text-color-third);
+}
+
+/* ----- CONTACT FORM FOCUS EFFECT ----- */
+.input-field:focus,
+textarea:focus {
+    border-color: var(--text-color-third);
+    box-shadow: 0 0 5px var(--text-color-third);
+}
+
+/* ----- ANIMATIONS ON LOAD ----- */
+.featured-text, .featured-image, .project-box, .contact-info {
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 /* ----- CHANGE THE SCROLL BAR DESIGN ----- */
