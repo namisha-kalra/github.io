@@ -1,86 +1,109 @@
 /* ----- POPPINS FONT Link ----- */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
 
-/* ----- VARIABLES (DARK THEME) ----- */
+/* ----- VARIABLES (DARK PINK + BEIGE THEME) ----- */
 :root {
-    --body-color: #0d1117;
-    --color-white: #161b22;
+    --body-color: #1e1e1e;
+    --color-white: #f5f5f5;
 
-    --text-color-second: #c9d1d9;
-    --text-color-third: #58a6ff;
+    --text-color-second: #f9f3f3;
+    --text-color-third: #ff8fab; /* Soft pink */
 
-    --first-color: #238636;
-    --first-color-hover: #2ea043;
+    --first-color: #ff4d6d; /* Vibrant pink */
+    --first-color-hover: #e63956;
 
-    --second-color: #238636;
-    --third-color: #f0b429;
+    --second-color: #f7c59f; /* Beige tone */
+    --third-color: #ffc2d1; /* Light pink */
     --first-shadow-color: rgba(255, 255, 255, 0.05);
 }
 
 /* ----- BASE STYLES REMAIN SAME, DARK COLORS ALREADY APPLIED VIA VARIABLES ----- */
 
-/* Additional Dark Theme Adjustments */
+/* Additional Dark + Animation Enhancements */
 .scroll-btn {
     background: var(--color-white);
-    color: var(--text-color-second);
+    color: var(--text-color-third);
+    transition: all 0.3s ease-in-out;
+}
+.scroll-btn:hover {
+    transform: scale(1.05);
+    background: var(--second-color);
 }
 
 .about-info {
     background: var(--color-white);
     color: var(--text-color-second);
+    transition: background 0.4s ease;
 }
-
 .about-info p {
-    color: #8b949e;
+    color: #777;
 }
 
 .skills-box {
     background: var(--color-white);
-    color: var(--text-color-second);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.skills-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(255, 105, 135, 0.2);
 }
 
 .project-box,
 .full-width-project-box {
     background: var(--color-white);
     color: var(--text-color-second);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
+.project-box:hover,
+.full-width-project-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(255, 105, 135, 0.2);
+}
 .project-box label,
 .full-width-project-box label {
-    color: #8b949e;
+    color: #666;
 }
-
 .full-width-project-box h3 {
-    color: var(--text-color-second);
+    color: var(--text-color-third);
 }
 
 .contact-info {
-    background: var(--color-white);
-    color: var(--text-color-second);
+    background: var(--second-color);
+    color: #333;
+    transition: background 0.3s ease-in-out;
+}
+.contact-info:hover {
+    background: #ffddd2;
 }
 
 footer {
-    background: #0d1117;
+    background: #2a2a2a;
     color: var(--text-color-second);
 }
 
 .footer_menu_list a {
-    color: var(--text-color-second);
+    color: var(--third-color);
+    transition: color 0.3s ease-in-out;
+}
+.footer_menu_list a:hover {
+    color: var(--first-color);
 }
 
 .bottom-footer {
-    color: #8b949e;
+    color: #aaa;
 }
 
-/* Light text in buttons */
+/* Button Styling */
 .btn {
-    background: var(--second-color);
-    color: #FFF;
+    background: var(--first-color);
+    color: #fff;
+    transition: background 0.3s ease-in-out;
 }
 
 .btn:hover {
     background: var(--first-color-hover);
-    color: #FFF;
+    color: #fff;
+    transform: scale(1.05);
 }
 
 
